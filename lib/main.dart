@@ -7,10 +7,10 @@ import 'screens/dashboard_screen.dart';
 import 'screens/confirmation_screen.dart';
 
 void main() {
-  runApp(SahayNetApp());
+  runApp(sahaynet());
 }
 
-class SahayNetApp extends StatelessWidget {
+class sahaynet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,9 +20,9 @@ class SahayNetApp extends StatelessWidget {
 
       routes: {
         '/splash': (ctx) => SplashScreen(),
-        // '/onboarding': (ctx) => OnboardingScreen(),
-        // '/dashboard': (ctx) => DashboardScreen(),
-        // '/confirmation': (ctx) => ConfirmationScreen(),
+        '/onboarding': (ctx) => OnboardingScreen(),
+        '/dashboard': (ctx) => DashboardScreen(),
+        '/confirmation': (ctx) => ConfirmationScreen(),
       },
     );
   }
